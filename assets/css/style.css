@@ -64,7 +64,7 @@ body {
     border-width: 1px;
 }
 
-#newUser,#logout {
+#newUser{
     color: #8cd98c;
     margin: 5px;
 }
@@ -121,6 +121,16 @@ body {
     background-size: 100%;
     box-shadow: 25px 25px 25px 25px white inset, -25px -25px 50px 0 white inset;
 }
+
+.buttonStyle {
+    margin: 5px;
+    color: #ff7733;
+    background-color: #8cd98c;
+    border-color: #ff7733;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
 
 #searchResult{
     color: black;
