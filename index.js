@@ -79,6 +79,7 @@ var SpeechToTextV1 = require('watson-developer-cloud/speech-to-text/v1');
 		// Create the stream.
 		var recognizeStream = speech_to_text.createRecognizeStream(params);
 		// Pipe in the audio.
+		console.log('About to pipe', bufferStream, ' because calledWatson is', calledWatson);
 		bufferStream.pipe(recognizeStream);
 
 		recognizeStream.setEncoding('utf8');

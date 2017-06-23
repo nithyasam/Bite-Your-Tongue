@@ -196,8 +196,11 @@ navigator.mediaDevices.getUserMedia({audio:true})
 .then(stream => {
 	rec = new MediaRecorder(stream);
 	rec.ondataavailable = e => {
+		console.log(e);
 		audioChunks.push(e.data);
+		console.log(rec.state);
 		if (rec.state == "inactive"){
+			console.log('Coming here with', audioChunks);
 			blob = new Blob(audioChunks,{type:'audio/wav'});
 		}
 	}
