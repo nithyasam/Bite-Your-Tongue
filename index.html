@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bite Your Tongue</title>
+	<!--FireBase-->
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js">
+	</script>
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Style Sheet -->	
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<!-- Jquery -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- app logic -->	
+	<script type="text/javascript" src="/app.js"></script>
+</head>
+<body>
+	<!-- =========================================== -->
+    <!-- Heading Section -->
+    <!-- =========================================== -->
+	<div class="jumbotron" id="center">
+		<h1>Bite Your Tongue</h1>
+		<p id="caption"></p>
+		<div id="signOutDiv" id="centerLogin">
+			<button type="submit" class="btn btn-primary" id="logout" align="right">Signout</button>
+		</div>
+	</div>
+	<br>
+	<!-- =========================================== -->
+    <!-- Login Section -->
+    <!-- =========================================== -->
+	<div id="loginDiv">
+		<div id="centerLogin">
+			<div class="row" id="loginSection">
+				<div class="col-lg-12" id="logInUser">
+					<div class="panelPrimary">
+						<div class="panelHeading">
+							<h2>Please login</h2>
+						</div>
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group">
+									<label>User Email:</label>
+									<input type="text" name="useremail" class="form-control" id="useremail">
+								</div>
+								<div class="form-group">
+									<label>Password : </label>
+									<input type="password" name="password" class="form-control" id="password">
+								</div>
+								<button type="submit" class="btn btn-primary" id="login">Login</button>
+								<span id="newUser"><a href="#" id="link">New User</a></span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =========================================== -->
+    <!-- Voice recording Section -->
+    <!-- =========================================== -->
+	<div id="recordDiv">
+		<p>
+			<div id="startDiv">
+				<button class="buttons" id="startRecord">Start</button>
+			</div>
+			<br>
+			<div id="stopDiv">
+				<button class="buttons" id="stopRecord">Stop</button>
+				<br>
+			</div>
+			<div id="submitDiv">
+				<button class="buttons" id="submitRecord">Submit</button>
+				<br>
+			</div>
+		</p>
+	</div>
+	<!-- =========================================== -->
+    <!-- Message section -->
+    <!-- =========================================== -->
+	<div id="textDiv">
+		<div id="centerLogin">
+			<div class="row">
+				<div class="col-lg-12" >
+					<div class="panelPrimary">
+						<div class="panelHeading">
+							<h2>This is what you said!</h2>
+						</div>
+						<div class="panel-body">
+							<form>
+								<label for="message">Message:</label>
+								<br>
+								<textarea id="message"></textarea>
+								<br>
+								<input id="submitMessage" type="submit" class="submit" value="Submit" />
+								<br>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =========================================== -->
+    <!-- Yelp Fusion API search -->
+    <!-- =========================================== -->
+	<div id="foodDiv">
+		<div id="centerLogin">
+			<div class="row" >
+				<div class="col-lg-12">
+					<div class="panelPrimary">
+						<div class="panelHeading">
+							<h2>Eat before you speak</h2>
+							<h4 id="toMessageSection"><a href="#" id="link">Click here for generating email</a></h4>
+						</div>
+						<div class="panel-body">
+							
+							<form role="form">
+								<div class="form-group">
+									<label>Search</label>
+									<input type="text" required="true" name="searchTerm" class="form-control" id="searchTerm">
+								</div>
+								<div class="form-group">
+									<label>Zip-Code/Location</label>
+									<input type="text" name="zipcode" required="true" class="form-control" id="zipcode">
+								</div>
+								<button type="submit" class="btn btn-primary" id="search">Look Up</button>
+							</form>
+							<span id="searchResult"></span>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =========================================== -->
+    <!-- New User SignUp Section -->
+    <!-- =========================================== -->
+	<div id="newUserDiv">
+		<div id="centerLogin">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panelPrimary">
+						<div class="panelHeading">
+							<h2>Sign up</h2>
+						</div>
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group">
+									<label>New User Email:</label>
+									<input type="text" name="newuseremail" class="form-control" id="newuseremail">
+								</div>
+								<div class="form-group">
+									<label> New User Password : </label>
+									<input type="password" name="newpassword" class="form-control" id="newpassword">
+								</div>
+								<button type="submit" class="btn btn-primary" id="addUser">Sign up</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =========================================== -->
+    <!-- Thank You Section -->
+    <!-- =========================================== -->
+	<div id="thankyou">
+		<div id="centerLogin">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panelPrimary">
+						<div class="panelHeading">
+							<h2>Thank you for using Bit-Your-Tongue!</h2>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    border-style: solid;
+    border-color: #8cd98c;
+    border-radius: 6px;
+}
+
+#center {
+    background-color: #ff7733;
+    color: #8cd98c;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 3px;
+    width: 60%;
+    margin: auto;
+}
+
+#centerLogin {
+    color: #8cd98c;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 3px;
+    width: 60%;
+    margin: auto;
+}
+
+.form-control {
+    font-family: sans-serif;
+}
+
+#link {
+    color: #ff7733;
+}
+
+#login {
+    background-color: #8cd98c;
+    text-align: center;
+    margin: auto;
+    float: left;
+    border-color: #ff7733;
+}
+
+#addUser {
+    background-color: #8cd98c;
+    text-align: center;
+    margin: auto;
+    float: left;
+    border-color: #ff7733;
+}
+
+#submitMessage,  {
+    padding: 8px 10px;
+    color: white;
+    background-color: #8cd98c;
+    text-align: center;
+    margin: auto;
+    float: left;
+    border-color: #ff7733;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#newUser,#logout {
+    color: #8cd98c;
+    margin: 5px;
+}
+
+.panelHeading {
+    letter-spacing: 3px;
+    font-size: 50px;
+    background-color: #8cd98c;
+    color: #ff7733;
+    padding: 20px;
+}
+
+.panelPrimary {
+    border-style: solid;
+    border-color: #ff7733;
+    border-radius: 6px;
+    margin: 0 0 20px 0;
+}
+
+.panel-body {
+    background-color: white;
+}
+
+.buttons {
+    display: block;
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #8cd98c;
+    color: #ff7733;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 3px;
+}
+
+.img-size {
+    display: block;
+    height: 75px;
+    width: 100px;
+}
+
+#message {
+    width: 100%;
+    color: black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#foodImg {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://hdwallsource.com/img/2014/6/food-wallpaper-5772-5937-hd-wallpapers.jpg");
+    background-size: 100%;
+    box-shadow: 25px 25px 25px 25px white inset, -25px -25px 50px 0 white inset;
+}
+
+#searchResult{
+    color: black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#searchResult h3{
+    color: blue;
+}
