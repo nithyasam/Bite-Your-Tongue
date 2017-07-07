@@ -167,6 +167,7 @@ $("#submitMessage").on('click', function(event) {
 //==============================================
 $("#search").on("click", function(){
 	event.preventDefault();
+	$("#searchResult").html("");
 	var searchTerm = $('#searchTerm').val();
 	var location = $('#zipcode').val();
 	console.log(searchTerm +" "+ location);
