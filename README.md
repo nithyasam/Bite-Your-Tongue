@@ -5,6 +5,7 @@ Bite Your Tongue is an app that takes the frustration out of being angry (or han
 The motivation for its development was simply to provide an immediate solution to frustration and anger, as well as suggestions of tools to make you happy, or at least, less potentially homicidal. After a little patience and food, no situation is truly that bad. This gives you the chance to review the words spoken in anger before you send them so that you can have the option to change your mind. 
 
 The technologies you used : 
+
 Nodejs, Express App
 
 Firebase based authentication
