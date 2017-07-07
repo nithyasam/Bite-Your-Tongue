@@ -6,8 +6,13 @@ The motivation for its development was simply to provide an immediate solution t
 
 The technologies you used : 
 Nodejs, Express App
+
 Firebase based authentication
+
 MediaStream Recording API
+
 IBM Watson Speech To Text API
+
 YELP API
+
 Nodemailer
